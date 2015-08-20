@@ -10,6 +10,7 @@ var express = require('express');
 //        .file({ file: './config.json' });
 var app = express();
 var port = 3000;
+var path = require('path');
 
 /*
  * Mongo DB
