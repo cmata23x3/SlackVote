@@ -23,6 +23,12 @@ var mongoUri = process.env.MONGOLAB_URI ||
 var db = monk(mongoUri);
 
 /*
+ * Adding view engine
+ */
+ app.set('views', path.join(__dirname, 'views'));
+ app.set('view engine', 'html');
+
+/*
  * Slack configuration
  */
 var Slack = require('slack-node');
