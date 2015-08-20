@@ -3,12 +3,13 @@
   "version": "0.0.0",
   "private": true,
   "dependencies": {
+    "ejs": "^2.3.3",
     "express": "~3.4.0",
     "express3-handlebars": "0.4.x",
     "mongodb": "*",
     "monk": "*",
-    "slack-node": "*",
-    "nconf" : "*"
+    "nconf": "*",
+    "slack-node": "*"
   },
   "devDependencies": {
     "grunt": "~0.4.1",
