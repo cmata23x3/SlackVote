@@ -10,6 +10,7 @@ var express = require('express');
 //        .file({ file: './config.json' });
 var app = express();
 var port = 3000;
+var path = require('path');
 
 /*
  * Mongo DB
@@ -26,7 +27,7 @@ var db = monk(mongoUri);
  * Adding view engine
  */
  app.set('views', path.join(__dirname, 'views'));
- app.set('view engine', 'ejs');
+ app.set('view engine', 'handlebars');
 
 /*
  * Slack configuration
